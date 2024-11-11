@@ -14,21 +14,21 @@ To get started with this project locally, follow the steps below:
 #### Prerequisites
 Make sure you have the following installed on your system:
 
-Node.js (version 14.x or higher)
-npm (Node Package Manager)
-Make sure to set up env variable : VITE_GOOGLE_CLIENT_ID 
+- Node.js (version 14.x or higher)
+- npm (Node Package Manager)
+- Make sure to set up env variable : VITE_GOOGLE_CLIENT_ID 
 
-- Step-by-Step Guide
-Clone the repository:
+#### Step-by-Step Guide
+- Clone the repository:
 git clone https://github.com/yourusername/brilliant.git
 
-Navigate to the project directory:
+- Navigate to the project directory:
 cd brilliant
 
-Install the required dependencies:
+- Install the required dependencies:
 npm install
 
-Running the Development Server
+- Running the Development Server
 npm run dev
 
-This will open the app at http://localhost:5173/ in your default web browser.
+- This will open the app at http://localhost:5173/ in your default web browser.

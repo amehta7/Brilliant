@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Brilliant - Learning Platform
+A modern learning platform built with React, Tailwind CSS, and integrated with Google OAuth for authentication. This project allows users to register, log in, and access personalized learning paths.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
+- User Authentication: Users can sign up, log in using email or Google OAuth, and log out.
+- Responsive Design: The layout adapts to various screen sizes using Tailwind CSS.
+- Social Proof Section: Showcases statistics, ratings, and testimonials to build user trust.
+- Search: Users can search content easily with a search bar.
+- Gift Premium Button: Allows users to purchase a premium membership.
 
-Currently, two official plugins are available:
+### Installation
+To get started with this project locally, follow the steps below:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Prerequisites
+Make sure you have the following installed on your system:
 
-## Expanding the ESLint configuration
+Node.js (version 14.x or higher)
+npm (Node Package Manager)
+Make sure to set up env variable : VITE_GOOGLE_CLIENT_ID 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Step-by-Step Guide
+Clone the repository:
+git clone https://github.com/yourusername/brilliant.git
 
-- Configure the top-level `parserOptions` property like this:
+Navigate to the project directory:
+cd brilliant
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Install the required dependencies:
+npm install
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Running the Development Server
+npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This will open the app at http://localhost:5173/ in your default web browser.
